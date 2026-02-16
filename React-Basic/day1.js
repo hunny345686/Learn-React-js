@@ -1,6 +1,3 @@
-
-
-
 const React = {
     createElement: function (tag, attributs, children) {
 
@@ -22,7 +19,12 @@ const React = {
     }
 }
 
-
+const ReactDOM = {
+    render: function (child, parent) {
+        parent.append(child)
+    }
+}
 const elem1 = React.createElement("h1", { className: "H1", id: "H1", style: { background: "red", color: "#fff" } }, "Hello Word")
+const root = document.getElementById("root")
 
-document.getElementById("root").append(elem1)
+ReactDOM.render(elem1, root)
