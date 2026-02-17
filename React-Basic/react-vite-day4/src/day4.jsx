@@ -7,7 +7,7 @@ import "./App.css";
 //   count++;
 //   createRoot(document.getElementById("root")).render(<App />);
 // }
-function App() {
+function Day4() {
   //  === Without UseState
 
   // let count = 0;
@@ -43,4 +43,4 @@ function App() {
   );
 }
 
-export default App;
+export default Day4;
