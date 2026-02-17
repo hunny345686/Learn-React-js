@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script>
+        const root = document.getElementById("root")
+        let conter = 0
+        function render(container) {
+            container.innerHTML = `
+            <div>
+             <h3>${conter}</h3>
+                <button onclick = increament()>Increment</button>
+                <button onclick = decreament()>Decreament</button>
+             </div>
+            `
+
+        }
+        function increament() {
+            conter++
+            // render(root)
+            document.querySelector("h3").innerText = conter
+
+        }
+        function decreament() {
+            conter--
+            // render(root)
+
+            document.querySelector("h3").innerText = conter
+
+        }
+        render(root)
+    </script>
+</body>
+
+</html>

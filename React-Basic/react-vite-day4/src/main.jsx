@@ -3,10 +3,12 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import Day4 from "./day4.jsx";
 import Day5 from "./day5.jsx";
+import Dya6 from "./day6.jsx";
 
 createRoot(document.getElementById("root")).render(
   <>
     {/* <Day4 /> */}
-    <Day5 />
+    {/* <Day5 /> */}
+    <Dya6 />
   </>
 );
