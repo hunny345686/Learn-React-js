@@ -1,4 +1,5 @@
 import React, { useCallback, useMemo, useState } from "react";
+import Day9 from "./day9";
 
 const Sum = React.memo(({ no }) => {
   function calculateSum() {
@@ -81,6 +82,14 @@ export default function Dya8() {
   const handleCount = () => {
     setCounter(conter + 1);
   };
+
+  const fn = useCallback(() => {
+    return "Hello HI ";
+  }, []);
+
+  // const data = useMemo(() => {
+  //   return { name: "Prem", age: 20 };
+  // }, []);
   return (
     <div>
       <h2>Day 8</h2>
@@ -96,6 +105,8 @@ export default function Dya8() {
 
       <p>UseCallback Hook function memoization {conter}</p>
       <button onClick={handleClick}>Click(useCallback)</button>
+      {/* After using react memo also it will rerander due to we are paasing object in proper when it will rerand it will compare the old obj and new object and both the obj will no equel so this component will rerander */}
+      <Day9 fn={fn} />
     </div>
   );
 }
