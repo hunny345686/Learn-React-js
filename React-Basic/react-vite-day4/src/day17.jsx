@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import LreanReducer from "./components/reducerComponnt";
 
 const reducer = (state, action) => {
   console.log(state, action);
@@ -31,6 +32,11 @@ const Day17 = () => {
       <button onClick={() => dispatch({ type: "ADD10", val: 10 })}>
         Add 10
       </button>
+      <hr
+        style={{ border: "2px dashed red", width: "100%", marginBlock: "16px" }}
+      />
+
+      <LreanReducer />
     </div>
   );
 };
