@@ -14,6 +14,7 @@ import Day13 from "./day13.jsx";
 import Day14 from "./day14.jsx";
 import Day15 from "./day15.jsx";
 import Day16 from "./day16.jsx";
+import Day17 from "./day17.jsx";
 
 createRoot(document.getElementById("root")).render(
   <>
@@ -29,6 +30,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Day13 /> */}
     {/* <Day14 /> */}
     {/* <Day15 /> */}
-    <Day16></Day16>
+    {/* <Day16></Day16> */}
+    <Day17 />
   </>
 );
