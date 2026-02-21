@@ -21,6 +21,7 @@ const reducer = (state, action) => {
 
 const Day17 = () => {
   const [state, dispatch] = useReducer(reducer, 0);
+
   return (
     <div>
       <h2>Day 17 = useReducer Hook</h2>
